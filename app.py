@@ -29,19 +29,6 @@ def predict(image):
 
 st.markdown(
     """
-    <style>
-    .centered {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-st.markdown(
-    """
     <div class="centered">
         <img src="dsv.jpg" width="500">
     </div>
