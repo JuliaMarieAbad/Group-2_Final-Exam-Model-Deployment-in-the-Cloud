@@ -36,6 +36,7 @@ body {
 </style>
 """
 st.markdown(background, unsafe_allow_html=True)
+
 st.image("dsv.jpg", width=500)
 st.title("Cat and Dog Image Classification App")
 st.markdown("### Upload an image to classify it as a cat or a dog:")
