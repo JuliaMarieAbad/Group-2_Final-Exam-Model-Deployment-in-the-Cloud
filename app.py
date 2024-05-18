@@ -26,7 +26,16 @@ def predict(image):
     prediction = model.predict(image)
     predicted_class = class_names[int(np.round(prediction[0]))]
     return predicted_class
-
+    
+background = """
+<style>
+body {
+    background-image: URL("https://drive.google.com/uc?id=1gL1tWcuzBrJLy_XI3dpLxnmkeQpzMnmh");
+    background-size: cover;
+}
+</style>
+"""
+st.markdown(background, unsafe_allow_html=True)
 st.image("dsv.jpg", width=500)
 st.title("Cat and Dog Image Classification App")
 st.markdown("### Upload an image to classify it as a cat or a dog:")
