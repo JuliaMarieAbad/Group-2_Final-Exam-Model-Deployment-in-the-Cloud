@@ -28,7 +28,7 @@ def predict(image):
     return predicted_class
 
 st.title("Cat and Dog Image Classification App")
-st.markdown("### Upload an image to classify it as a cat or a dog.")
+st.markdown("### Upload an image to classify it as a cat or a dog:")
 uploaded_file = st.file_uploader("", type="jpg")
 
 if uploaded_file is not None:
@@ -38,3 +38,9 @@ if uploaded_file is not None:
     st.write("Classifying...")
     label = predict(image)
     st.write(f"Prediction: {label}")
+
+with st.beta_expander("View Prediction Details"):
+    if uploaded_file is not None:
+        label = predict(image)
+        st.write(f"Prediction: {label}")
+
