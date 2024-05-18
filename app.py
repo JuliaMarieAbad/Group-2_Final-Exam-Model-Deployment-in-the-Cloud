@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image
 import gdown
 
-model_url = 'https://drive.google.com/file/d/1-IQghpVqloccTnJJVD8sJiI3kuYsaz-8'  
+model_url = 'https://drive.google.com/uc?id=1-IQghpVqloccTnJJVD8sJiI3kuYsaz-8'  
 model_path = 'cat_dog_classifier.h5'
 
 @st.cache(allow_output_mutation=True)
