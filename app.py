@@ -27,8 +27,7 @@ def predict(image):
     predicted_class = class_names[int(np.round(prediction[0]))]
     return predicted_class
 
-st.markdown('<img src="dsv.jpg" class="center">')
-#st.image("dsv.jpg", width=500)
+st.image("dsv.jpg", width=500)
 st.title("Cat and Dog Image Classification App")
 st.markdown("### Upload an image to classify it as a cat or a dog:")
 uploaded_file = st.file_uploader("", type="jpg")
